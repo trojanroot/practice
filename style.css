@@ -16,6 +16,7 @@ h2{
     color: white;
     width: 100%;
     height: 100dvh;
+    display: none;
 }
 ul{
     display: flex;
@@ -51,44 +52,98 @@ ul{
     }
 }
 .product{
-    /* ducteature-namesimage{
+.productList{
+    display:grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px;
 
-    } */
-    button{
-     background-color: brown;
-    color: white;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    .card{
+        width: 250px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 300px;
+        display: flex;
+        flex-direction: column; 
+        justify-content:flex-end;
+        
+        button{
+         background-color: brown;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        }
+    }
+    .card1{
+        background-image: url(lib/picture6.png);
+        }
+    .card2{
+        background-image: url(lib/picture1.png);
+    }
+    .card3{
+        background-image: url(lib/picture2.png);
+    }
+    .card4{
+        background-image: url(lib/picture3.png);
+    }
+    .card5{
+        background-image: url(lib/picture4.png);
+    }
+    .card6{
+        background-image: url(lib/picture5.png);
     }
 }
-.banner-paragraph{
+
+}
+.bannerParagraph{
     background-image: url(/practice/lib/bannerpara.png);
-    width: 1520px;
+    width: 100%;
     height: 442px;
     text-align: center;
     background-size: cover;
-    .learnMore2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+/* display: grid;
+place-content: center; */
+    button{
         background-color: brown;
-    color: white;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+        background-color:brown;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
-.About{
+.about{
     background-image: url(lib/about.png);
-    width: 1520px;
+    width: 100%;
     height: 454px;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    color: white;
+    button{
+        background-color:brown;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .abutton{
+        color: white;
+        padding-left: 20px;
+
+    }
 }
-.banner-paragraph{
-    
-}
+
 footer{
     background-image:url(lib/footer.png);
     width: 100%;
@@ -109,115 +164,36 @@ footer{
     }
 
 }
-.pdetail1{
-    display: flex;
-    justify-content: space-between;
-}
-.pdetail2{
-    display: flex;
-    justify-content: space-between;
-}
-.pdetail3{
-    display: flex;
-    justify-content: space-between;
-}
-.pdetail4{
-    display: flex;
-    justify-content: space-between;
-}
-.pdetail5{
-    display: flex;
-    justify-content: space-between;
-}
-.pdetail6{
-    display: flex;
-    justify-content: space-between;
-}
-
-.pimg{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-}
-.pimg1{
-   background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-    
-}
-.pimg2{
-   
-   background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-    
-}
-.pimg3{
-
-   background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-    
-}
-.pimg4{
-   
-   background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-    
-}
-.pimg5{
-
-   background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-     
-}
-.pimg6{
-
-    background-repeat: no-repeat;
-   background-size: 100px;
-   background-position: center;
-   color: white;
-    width: 300px ;
-    height: 300px;
-    background-color: black;
-    
-}
-.fimage{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-}
-.fdetail1{
-    display: flex;
-    justify-content: space-around;
-}
-.fdetail2{
-    display: flex;
-    justify-content: space-around;
-}
-.fdetail3{
-    display: flex;
-    justify-content: space-around;
+.feature{
+    .featurelist{
+        display:grid;
+    grid-template-columns: repeat(3,6fr);
+    gap: 30px;
+    }
+    .fimg{
+        background-color: black;
+        color: white;
+        width: 350px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        button{
+            background-color: brown;
+            color: white;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .fimg1{
+        background-image:url(lib/puffpastry.png) ;
+    }
+    .fimg2{
+        background-image:url(lib/doughnuts.png) ;
+    }
+    .fimg3{
+        background-image:url(lib/brownies.png) ;
+    }
 }
